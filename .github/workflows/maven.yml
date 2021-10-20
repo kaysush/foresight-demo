@@ -24,6 +24,8 @@ jobs:
 
     - name: Thundra Maven Test Instrumentation
       uses: thundra-io/thundra-maven-test-action@v1
+      env:
+        IS_RUNNING_IN_CI: true
       with:
         apikey:  ${{ secrets.THUNDRA_APIKEY }}
         project_id: ${{ secrets.THUNDRA_PROJECT_ID }}
