@@ -1,3 +1,6 @@
+import io.thundra.agent.api.trace.annotations.Traced;
+
+@Traced(traceLineByLine = true)
 public class MyShinyClass {
 
     public int compute(){
